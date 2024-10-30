@@ -1,0 +1,123 @@
+.modal-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    margin-top: 100px;
+    background-color: #fff; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); 
+    padding: 20px; 
+}
+
+.modal-title {
+    font-size: 5.5rem;
+    font-weight: bold; 
+    margin-bottom: 20px; 
+}
+
+.modal-label {
+    margin-bottom: 4px;
+}
+
+.modal-input {
+    width: 100%;
+    margin-bottom: 12px;
+    padding: 8px;
+    border: 1px solid #ccc; 
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.modal-textarea {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 12px;
+    padding: 8px;
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    font-size: 16px;
+}
+
+.modal-button-container {
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;       
+    margin-top: 20px;
+}
+
+.close-button {
+    margin-right: 22px; 
+}
+
+.submit-button {
+    margin-bottom: 0;
+}
+
+
+.checkbox-label {
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.radio-group {
+    margin-bottom: 12px;
+}
+
+
+.toggle-label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    padding: 0 10px; 
+}
+
+.toggle-input {
+    display: none; 
+}
+
+.toggle-slider {
+    position: relative;
+    width: 50px; 
+    height: 24px; 
+    background-color: #ccc; 
+    border-radius: 24px; 
+    margin-right: 10px; 
+    transition: background-color 0.3s;
+}
+
+.toggle-slider:before {
+    content: '';
+    position: absolute;
+    width: 20px; 
+    height: 20px; 
+    background-color: white;
+    border-radius: 50%;
+    top: 2px; 
+    left: 2px; 
+    transition: transform 0.3s;
+}
+
+.toggle-input:checked + .toggle-slider {
+    background-color: #4caf50; 
+}
+
+.toggle-input:checked + .toggle-slider:before {
+    transform: translateX(26px); 
+}
+
+
+
+.error {
+    border: 1px solid red; 
+}
+
+.error-message {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 4px;
+}

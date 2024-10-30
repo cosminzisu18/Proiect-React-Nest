@@ -1,0 +1,85 @@
+.animate-left,
+.animate-right,
+.fade-in,
+.slide-up {
+  opacity: 0;
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-left {
+  animation: slideInLeft 1.5s forwards;
+}
+
+.animate-right {
+  animation: slideInRight 1.5s forwards;
+}
+
+.slide-up {
+  animation: slideUp 1.5s forwards;
+}
+
+.fade-in {
+  animation: fadeIn 8s forwards;
+}
+
+.delay-1 {
+  animation-delay: 1s;
+}
+
+.delay-2 {
+  animation-delay: 2s;
+}
+
+.delay-3 {
+  animation-delay: 3s;
+}
+
+.delay-4 {
+  animation-delay: 4s;
+}
+
+.delay-5 {
+    animation-delay: 5s;
+  }
+  
